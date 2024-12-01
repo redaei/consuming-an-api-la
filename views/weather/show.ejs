@@ -1,0 +1,19 @@
+<!-- The name of the city.
+The current temperature.
+The current weather description.
+A link with the text Back to home! that points to the route /. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>City: <%= data.name %></h3>
+    <h4>Current temp is: <%= data.main.temp %></h4>
+    <h4>Current Weather: <%= data.weather[0].description %></h4>
+    <br />
+    <a href="/">Back</a>
+  </body>
+</html>
